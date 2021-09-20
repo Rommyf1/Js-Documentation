@@ -1,0 +1,111 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.interface-container{
+  display: flex;
+}
+
+nav{
+  border-right: 3px solid #888;
+  position: fixed;
+}
+
+header{
+  font-size: 26px;
+  font-weight: 500;
+  height: 10vh;
+  margin: 3vh;
+  display: flex;
+  align-items: center;
+}
+
+nav header{
+  justify-content: center;
+}
+
+nav ul{
+  height: 84vh;
+  overflow-y: auto;
+}
+
+nav li{
+  list-style: none;
+}
+
+nav li{
+  width: 100%;
+  border-top: 1px solid #bbb;
+}
+
+.nav-link{
+  height: 2.5em;
+  display: block;
+  text-decoration: none;
+  color: #666;
+  display: flex;
+  align-items: center;
+  padding-left: .7em;
+}
+
+main{
+  padding: .1em .5em .5em 24vw;
+  margin: .5em;
+}
+
+p{
+  text-align: justify;
+  margin: 1em;
+  padding-left: 1em;
+}
+
+main li{
+  text-align: justify;
+  margin: 1.5em .5em 1em 5em;
+  padding-left: .5em;
+}
+
+li li{
+  margin-left: 1.5em;
+  padding-left: .5em;
+}
+
+code{
+  display: block;
+  background-color: #eee;
+  margin: 1em 4em;
+  padding: 1em .1em 1em 1em;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px){
+  .interface-container{
+    flex-direction: column;
+  }
+  
+  nav{
+    position: relative;
+    border: none;
+  }
+   
+  nav ul{
+    height: 100%;
+  }
+  
+  nav li:last-child{
+    border-bottom: 1px solid #bbb;
+  }
+  
+  .nav-link{
+    justify-content: center;
+  }
+  
+  main{
+    padding: 1em .5em;
+  }
+  
+  main header{
+    justify-content: flex-start;
+  }
+}
